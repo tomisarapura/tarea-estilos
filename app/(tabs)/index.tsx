@@ -1,12 +1,23 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform } from "react-native";
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { HelloWave } from "@/components/HelloWave";
+import ParallaxScrollView from "@/components/ParallaxScrollView";
+import { ThemedText } from "@/components/ThemedText";
+import { ThemedView } from "@/components/ThemedView";
+
+import { useState } from "react";
+import { Pressable, Text, View } from "react-native";
 
 export default function HomeScreen() {
-  return (
+  return;
+  <View>
+    <Text>Home</Text>
+    <Pressable onPress={() => console.log("Pressed")}>
+      <text>Press me</text>
+    </Pressable>
+  </View>;
+}
+/*
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
@@ -68,3 +79,4 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+*/
