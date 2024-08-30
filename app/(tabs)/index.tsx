@@ -12,6 +12,11 @@ const MainPage = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Index</Text>
+      <Pressable
+        onPress={() => {
+          console.log("Pressed");
+        }}
+      />
     </View>
   );
 };
