@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Image,
   StyleSheet,
@@ -9,19 +8,27 @@ import {
   View,
 } from "react-native";
 
-//import { HelloWave } from "@/components/HelloWave";
-//import ParallaxScrollView from "@/components/ParallaxScrollView";
-//import { ThemedText } from "@/components/ThemedText";
-//import { ThemedView } from "@/components/ThemedView";
-//import { useState } from "react";
-
-export default function HomeScreen() {
+const MainPage = () => {
   return (
-    <View>
-      <Text>Index</Text>
-      <Pressable onPress={() => console.log("Pressed")}>
-        <Text>Press me</Text>
-      </Pressable>
+    <View style={styles.container}>
+      <Text style={styles.text}>Index</Text>
     </View>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f5fcff",
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "black",
+  },
+});
+
+export default MainPage;
